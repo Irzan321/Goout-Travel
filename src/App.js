@@ -1,15 +1,15 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./component/Home";
-import Navigation from "./component/Navigation";
+import "./assets/index.css";
+import Jumbotron from "Components/Jumbotron";
+import Landing from "./Landing";
+import Services from "Components/Services";
 
-function App(props) {
+function App() {
   return (
-    <BrowserRouter>
-      <Navigation />
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-      </Routes>
-    </BrowserRouter>
+    <>
+      <Landing />
+      <Jumbotron />
+      <Services />
+    </>
   );
 }
 
