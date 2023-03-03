@@ -1,34 +1,33 @@
 import React from "react";
 import ServiceComponents from "./ServiceComponents";
+import CloudIcon from "assets/images/Cloud.png";
+import OfficeIcon from "assets/images/Office.png";
+import FlightIcon from "assets/images/Flight.png";
+import TouchIcon from "assets/images/Touch.png";
 
 function Services() {
   const data = [
     {
-      id: 1,
-      Image: "cloud.png",
+      src: CloudIcon,
       title: "Calculated Weather",
       desc: "A new way to travel by air the easy and fast way.",
     },
     {
-      id: 2,
-      Image: "Office.png",
+      src: OfficeIcon,
       title: "Best Place to Stay",
       desc: "A new way to travel by air the easy and fast way.",
     },
     {
-      id: 3,
-      Image: "Flight.png",
+      src: FlightIcon,
       title: "Best Experience Flight",
       desc: "A new way to travel by air the easy and fast way.",
     },
     {
-      id: 4,
-      Image: "Touch.png",
+      src: TouchIcon,
       title: "Easy-To-Use",
       desc: "A new way to travel by air the easy and fast way.",
     },
   ];
-  console.log(data);
   return (
     <>
       <section id="Services">
@@ -43,8 +42,15 @@ function Services() {
             </div>
             <div className="col-md-8">
               <div className="row">
-                {data.map((item) => {
-                  return <ServiceComponents key={item.title} desc={item.desc} title={item.title} />;
+                {data.map((data, index) => {
+                  return (
+                    <ServiceComponents
+                      key={index}
+                      src={data.src}
+                      desc={data.desc}
+                      title={data.title}
+                    />
+                  );
                 })}
               </div>
             </div>

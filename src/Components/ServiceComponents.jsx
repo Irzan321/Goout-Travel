@@ -1,5 +1,4 @@
 import React from "react";
-import CloudIcon from "assets/images/Cloud.png";
 
 export default function ServiceComponents(props) {
   return (
@@ -7,7 +6,7 @@ export default function ServiceComponents(props) {
       <div className="col-md-6 mt-5">
         <div className="row">
           <div className="col-md-3">
-            <img src={CloudIcon} alt="" className="img-fluid" />
+            <img src={props.src} alt="" className="img-fluid" />
           </div>
           <div className="col-md-9">
             <h4 className="fw-bold">{props.title}</h4>
