@@ -13,13 +13,13 @@ function Services() {
       desc: "A new way to travel by air the easy and fast way.",
     },
     {
-      src: OfficeIcon,
-      title: "Best Place to Stay",
+      src: FlightIcon,
+      title: "Best Experience Flight",
       desc: "A new way to travel by air the easy and fast way.",
     },
     {
-      src: FlightIcon,
-      title: "Best Experience Flight",
+      src: OfficeIcon,
+      title: "Best Place to Stay",
       desc: "A new way to travel by air the easy and fast way.",
     },
     {
@@ -30,9 +30,9 @@ function Services() {
   ];
   return (
     <>
-      <section id="Services">
-        <div className="container bg-secondary bg-row">
-          <div className="row px-4 align items-center">
+      <section id="services">
+        <div className="container bg-row">
+          <div className="row px-4 align-items-center">
             <div className="col-md-4">
               <h5 className="fw-bold text-primary"> Our Services</h5>
               <h1 className="fw-bold">

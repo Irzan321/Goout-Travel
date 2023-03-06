@@ -1,7 +1,9 @@
 import "./assets/index.css";
 import Jumbotron from "Components/Jumbotron";
-import Landing from "./Landing";
+import Landing from "Landing";
 import Services from "Components/Services";
+import Packages from "Components/Packages";
+import Destination from "Components/Destination";
 
 function App() {
   return (
@@ -9,6 +11,8 @@ function App() {
       <Landing />
       <Jumbotron />
       <Services />
+      <Packages />
+      <Destination />
     </>
   );
 }
